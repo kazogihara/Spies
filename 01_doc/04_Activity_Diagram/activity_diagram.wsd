@@ -1,0 +1,10 @@
+@startuml
+|Drone|
+start
+:動画の送信;
+|Video|
+:動画の受け取り;
+|User|
+:動画の閲覧;
+stop
+@enduml

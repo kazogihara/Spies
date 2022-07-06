@@ -1,0 +1,8 @@
+@startuml
+class Drone{}
+class Video{}
+class User{}
+
+Drone "." --> "." Video
+User "." --> "*" Video
+@enduml
