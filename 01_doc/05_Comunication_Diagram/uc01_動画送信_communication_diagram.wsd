@@ -1,3 +1,5 @@
+' TODO: クラスの命名規則を決めてクラス図に反映する
+' TODO: 基本設計時に不要であれば削除する
 @startuml UC01_動画送信
 title UC01_動画送信
 
@@ -6,9 +8,9 @@ left to right direction
 
 
 actor Drone
-boundary 動画送信
+control StreamSendControlor
 entity Video
 
-Drone -> 動画送信 : 呼び出し    
-動画送信 -> Video : 保存
+Drone -> StreamSendControlor : 呼び出し    
+StreamSendControlor -> Video : 保存
 @enduml

@@ -1,3 +1,4 @@
+' TODO: クラスの命名規則を決めてクラス図に反映する
 @startuml UC02_動画閲覧
 title UC02_動画閲覧
 
@@ -6,13 +7,12 @@ left to right direction
 
 
 actor User
-boundary 動画閲覧画面
-control 動画取得
+boundary StreamWatchView
+control StreamWatchControlor
 entity Video
 
 
-User -> 動画閲覧画面 : アクセス
-動画閲覧画面 -> 動画取得 : 呼び出し
-動画取得 -> Video : 問い合わせ
+User -> StreamWatchControlor : アクセス
+StreamWatchViewControlor -> StreamWatchView : 呼び出し
 
 @enduml
