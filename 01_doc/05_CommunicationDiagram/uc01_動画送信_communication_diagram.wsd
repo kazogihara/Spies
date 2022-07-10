@@ -1,16 +1,1 @@
-' TODO: クラスの命名規則を決めてクラス図に反映する
-' TODO: 製造後に不要であれば削除する
-@startuml UC01_動画送信
-title UC01_動画送信
-
-'Direction of diagram flow can be selected.
-left to right direction
-
-
-actor Drone
-control StreamSendControlor
-entity Video
-
-Drone -> StreamSendControlor : 呼び出し    
-StreamSendControlor -> Video : 保存
-@enduml
+MJPG-streamerが処理を行うのでこちらで実装は不要
