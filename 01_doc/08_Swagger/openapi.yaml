@@ -1,0 +1,37 @@
+swagger: "2.0"
+info:
+  description: "移動式監視カメラ管理システム"
+  version: "0.1.0"
+  title: "Spies"
+host: "localhost"
+basePath: "/v1"
+
+schemes:
+# - "https"
+- "http"
+
+paths:
+  /stream:
+    get:
+      tags:
+      - "stream"
+      summary: "Get stream view!"
+      description: ""
+      # consumes:
+      # - "application/json"
+      # produces:
+      # - "application/json"
+      # parameters:
+      # - in: "body"
+      #   name: "body"
+      #   description: "Pet object that needs to be added to the store"
+      #   required: true
+      #   schema:
+      #     $ref: "#/definitions/Pet"
+      responses:
+        "200":
+          description: ""
+
+externalDocs:
+  description: "Find out more about Swagger"
+  url: "http://swagger.io"
